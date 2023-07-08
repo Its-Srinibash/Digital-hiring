@@ -1,0 +1,282 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 1rem 1rem 1rem;
+    position: relative;
+    background-color: rgb(4, 153, 153);
+   
+    
+}
+.logo{
+    font-size: 250%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding-left:5rem ;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.navbar a{
+    margin-right: 1rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.navbar a:hover{
+    font-weight: 600;
+    color: black;
+  
+}
+
+
+/*Footer START*/
+.footer{
+    height: fit-content;
+}
+.footer-container{
+    padding: 7rem 5rem 7rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer-links a{
+    text-decoration: none;
+    color: rgb(6, 97, 97);
+    font-family: 'Poppins', sans-serif;
+    padding: 1rem;
+    font-size: large;
+}
+.copyright{
+    padding: 2rem 0 2rem 0;
+    font-family: 'Poppins', sans-serif;
+   font-size: smaller ;
+}
+/*Footer END*/
+
+
+
+
+.search-filter{
+   height:fit-content ;
+}
+.candidate-list{
+    padding: 0.03rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+   
+   
+}
+.candidate{
+    display: flex;
+    align-items: center;
+
+    
+    box-sizing: border-box;
+    padding: 1rem;
+   
+}
+.candidate-details{
+   padding: 1rem;
+   font-family: 'Poppins', sans-serif;
+   
+   
+}
+.candidate img{
+    border-radius: 50%;
+    width: 15%;
+    height: auto;
+    
+}
+.candidate-details h1,h4,h5,h6{
+    padding: 0.3rem;
+}
+.btn{
+    margin: 1rem;
+    padding: 1rem;
+    font-family: 'Poppins', sans-serif;
+    background-color:#049999;
+    color: aliceblue;
+    border: none;
+    border-radius: .5rem;
+
+}
+.btn:hover{
+    background-color: orangered;
+}
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem;
+  
+  }
+  
+  .form input[type="text"] {
+    padding: 10px;
+    
+    border-radius: 4px;
+    font-size: 16px;
+    width: 50%;
+    margin-right: 10px;
+  }
+  
+/* Styles for screens up to 600 pixels wide */
+@media screen and (max-width: 600px) {
+    .head-section{
+        height: fit-content;
+        padding: 1rem;
+      
+        
+    }
+    .container-1 h1{
+        font-weight: 300;
+        padding: 1rem;
+        font-size: 80%;  
+        text-align:justify;
+    }
+    .features{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+    .companies i{
+        padding: 1rem 1rem 1rem 1rem;
+        font-size: 400%;
+    }
+    .features-container h1{
+  
+        font-weight: 500;
+        padding: 1rem;
+        font-size: 200%;
+       
+        
+    }
+    .features-f1{
+    
+        padding: 1rem;
+        margin: 1rem;
+        background-color: rgb(4, 153, 153);
+        font-family: 'Poppins', sans-serif;
+        border-radius: 2rem;
+    }
+    .img-content img{
+     display: none;
+    }
+    .about-container p{
+      
+        font-weight: 500;
+       
+        font-size: 100%;
+        color: #fff;
+        text-align:justify;
+    }
+    .about-container{
+        padding: 2rem 1rem 2rem 1rem;
+       background-color: rgb(4, 153, 153);
+    }
+    .copyright{
+        padding: 2rem 0 2rem 0;
+       
+       font-size:x-small ;
+    }
+    .footer-links a{
+        font-size: small;
+    }
+    .logo{
+        font-size: 200%;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        padding-left:0rem ;
+    }
+  
+
+  }
+  
+  /* Styles for screens between 601 pixels and 900 pixels wide */
+  @media screen and (min-width: 601px) and (max-width: 900px) {
+    .head-section{
+        height: fit-content;
+        padding: 1rem;
+      
+        
+    }
+    .container-1 h1{
+        font-weight: 500;
+        padding: 1rem;
+        font-size: 100%;  
+        text-align: left;
+        
+    }
+    .companies i{
+        padding: 1rem 1rem 1rem 1rem;
+        font-size: 500%;
+    }
+    .candidate-list {
+        grid-template-columns: 1fr;
+      }
+    
+      .candidate img {
+        width: 15%;
+        height: auto;
+      }
+      .candidate-details h1{
+          font-size: large;
+      }
+      .candidate-details h4{
+          font-size: small;
+      }
+      .candidate-details h5{
+          font-size: smaller;
+      }
+      .candidate-details h6{
+          font-size:x-small;
+      }
+  }
+  
+  /* Styles for screens larger than 901 pixels wide */
+  @media screen and (max-width: 901px) {
+    .head-section{
+        height: fit-content;
+        padding: 4rem 3rem 4rem 3rem;
+      
+        
+    }
+    .container-1 h1{
+        font-weight: 900;
+        padding: 1rem;
+        font-size: 200%;  
+        
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .candidate-list {
+      grid-template-columns: 1fr;
+    }
+  
+    .candidate img {
+      width: 15%;
+      height: auto;
+    }
+    .candidate-details h1{
+        font-size: large;
+    }
+    .candidate-details h4{
+        font-size: small;
+    }
+    .candidate-details h5{
+        font-size: smaller;
+    }
+    .candidate-details h6{
+        font-size:x-small;
+    }
+  }

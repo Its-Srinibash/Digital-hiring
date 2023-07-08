@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*:focus{
+    outline: none;
+}
+
+.login-register{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     background-color: rgb(3, 112, 112); 
+    background-size: cover;
+    background-position: center;
+    font-family: 'roboto',sans-serif;
+}
+.form{
+   width: 400px;
+   height: auto;
+   color: #fff;
+   font-family: 'roboto',sens-serif; 
+}
+.heading{
+    
+
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+input,
+.submit-btn{
+    
+
+    width: 80%;
+    height: 35px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+    background:rgba(255, 255, 255, 0.584) ;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    transition: .5s;
+    text-transform: capitalize;
+}
+input::placeholder{
+    color: black;
+}
+input:focus,
+.submit-btn:hover{
+    background: #fff;
+    color: black;
+
+}
+.submit-btn{
+    width: auto;
+    padding: 0 20px;
+    cursor: pointer;
+    margin: 50px auto 0;
+}
+
+.link{
+ 
+    text-align: center;
+    text-transform: capitalize;
+    /* text-decoration: none; */
+    color: #fff;
+    display: block;
+    margin: 30px auto;
+}
+.link:hover{
+    color: black;
+    font-weight: 600;
+}
+.alert-box{
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 150px;
+    max-width: 90%;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    text-transform: capitalize;
+    background: rgba(244, 187, 187, 0.648);
+    border-top: 10px solid rgb(241, 9, 9);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #fff;
+    font-family: 'roboto',sans-serif;
+    text-align: center;
+    transition: 1s;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 1rem 1rem 1rem;
+    position: relative;
+    background-color: rgb(4, 153, 153);
+   
+    
+}
+.logo{
+    font-size: 250%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding-left:5rem ;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.navbar a{
+    margin-right: 1rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.navbar a:hover{
+    font-weight: 600;
+    color: black;
+  
+}
+
+
+/*Footer START*/
+.footer{
+    height: fit-content;
+}
+.footer-container{
+    padding: 7rem 5rem 7rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer-links a{
+    text-decoration: none;
+    color: rgb(6, 97, 97);
+    font-family: 'Poppins', sans-serif;
+    padding: 1rem;
+    font-size: large;
+}
+.copyright{
+    padding: 2rem 0 2rem 0;
+    font-family: 'Poppins', sans-serif;
+   font-size: smaller ;
+}
+/*Footer END*/
+
+
+
+/* Styles for screens up to 600 pixels wide */
+@media screen and (max-width: 600px) {
+    .head-section{
+        height: fit-content;
+        padding: 1rem;
+      
+        
+    }
+    .container-1 h1{
+        font-weight: 300;
+        padding: 1rem;
+        font-size: 80%;  
+        text-align:justify;
+    }
+    .features{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+    .companies i{
+        padding: 1rem 1rem 1rem 1rem;
+        font-size: 400%;
+    }
+    .features-container h1{
+  
+        font-weight: 500;
+        padding: 1rem;
+        font-size: 200%;
+       
+        
+    }
+    .features-f1{
+    
+        padding: 1rem;
+        margin: 1rem;
+        background-color: rgb(4, 153, 153);
+        font-family: 'Poppins', sans-serif;
+        border-radius: 2rem;
+    }
+    .img-content img{
+     display: none;
+    }
+    .about-container p{
+      
+        font-weight: 500;
+       
+        font-size: 100%;
+        color: #fff;
+        text-align:justify;
+    }
+    .about-container{
+        padding: 2rem 1rem 2rem 1rem;
+       background-color: rgb(4, 153, 153);
+    }
+    .copyright{
+        padding: 2rem 0 2rem 0;
+       
+       font-size:x-small ;
+    }
+    .footer-links a{
+        font-size: small;
+    }
+    .logo{
+        font-size: 200%;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        padding-left:0rem ;
+    }
+  }
+  
+  /* Styles for screens between 601 pixels and 900 pixels wide */
+  @media screen and (min-width: 601px) and (max-width: 900px) {
+    .head-section{
+        height: fit-content;
+        padding: 1rem;
+      
+        
+    }
+    .container-1 h1{
+        font-weight: 500;
+        padding: 1rem;
+        font-size: 100%;  
+        text-align: left;
+        
+    }
+    .companies i{
+        padding: 1rem 1rem 1rem 1rem;
+        font-size: 500%;
+    }
+  }
+  
+  /* Styles for screens larger than 901 pixels wide */
+  @media screen and (max-width: 901px) {
+    .head-section{
+        height: fit-content;
+        padding: 4rem 3rem 4rem 3rem;
+      
+        
+    }
+    .container-1 h1{
+        font-weight: 900;
+        padding: 1rem;
+        font-size: 200%;  
+        
+    }
+  }
+  
